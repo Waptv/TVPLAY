@@ -1,0 +1,289 @@
+
+
+
+<html>
+<body>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+					
+		
+
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://live4wap.neocities.org/style.css" />
+		<link rel="stylesheet" href="https://cdn.plyr.io/3.6.1/plyr.css" />
+			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+  		<script src="https://unpkg.com/video.js/dist/video.js"></script>
+  		<script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+  		<script src="https://kit.fontawesome.com/017eaf7e3f.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+						<div class="flix_app_player" ><iframe name="frame" frameborder="0" src="https://sports.mafiatv.live/player.php?id=598" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen  encrypted-media />      </iframe> 
+			</div>
+					<footer>
+				<a href="https://t.me/tv4wap"><i class="fas fa-arrow-left"></i>
+				<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhG8UAMfpwCFDYGwMosITl3ZMq3JfyuEB6YCagBQC3U9DEtROVKYdz4bRyldIOqJXeNI6aRk8e1Gyn7pqKlwbuFfbnv48Hl3bvfZQ05ALss828GEkDMWVj6N3RDunFQYyG-MR_y3Yu1MNSkVGLV53U13nZ9ZOACVRZoZrObysuSX7p-ka8v6e71_2ejbdg"  height="40px"></a>
+				<div class="btn-group dropup float-right sources-dropdown">
+					<button type="button" class="btn btn-secondary dropdown-toggle season-btn-selected" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Change Servers 
+					</button>
+					<div class="dropdown-menu dropdown-menu-right">
+												
+												
+												
+												
+												
+<a target ="frame" href="https://smart.bengaldigital.live/star-sports-1/embed.html?token=2db4ef5ddba5bf7694297856bfbb82ed86f25d3c-4c5fef115b20a620f4315476a939c267-1748363176-1748352376" class="dropdown-item source-btn"  alt="138" type="button">STAR SPORTS</a> 
+							
+<a target ="frame" href="https://cors-anywhere.ammoapps.com/https://funn-g1163.huibo.tv/DGI/H2102/chunks.m3u8?p=49&cf=1744984809&d=&ip=60.109.86.40&e=1794985409&h=1bd779f6c79b0f4909848dd023aff83d" class="dropdown-item source-btn"  alt="138" type="button">T SPORTS</a> 
+							
+													 
+<a target ="frame" href="https://tvlive.wapka.xyz/p16?https://cors-anywhere.ammoapps.com/38.96.178.201/live/TSports/index.m3u8" class="dropdown-item source-btn"  alt="138" type="button">T SPORTS</a> 
+
+					 
+	<a target ="frame" href="https://tvlive.wapka.xyz/p16?https://cors-anywhere.ammoapps.com/38.96.178.201/live/WILLOWTV/index.m3u8" class="dropdown-item source-btn"  alt="138" type="button">WILLOW TV</a> 
+		
+	<a target ="frame" href="https://tvlive.wapka.xyz/p17?https://toffee.xenolive.xyz/live.php?id=f4189bfa64f3f801495ad7a973334724&e=.m3u8" class="dropdown-item source-btn"  alt="138" type="button">TOFFEE IPL</a> 
+									
+											
+											
+											
+											
+					
+											
+											
+									</div></div>
+			
+			
+			</footer>	
+			<script>
+window['__onGCastApiAvailable'] = function(isAvailable) {
+  if (isAvailable) {
+    initializeCastApi();
+  }
+};
+
+initializeCastApi = function() {
+  cast.framework.CastContext.getInstance().setOptions({
+    receiverApplicationId: applicationId,
+    autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
+  });
+};
+		
+</script>
+		<script src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+			
+		<script src="https://cdn.plyr.io/3.6.1/plyr.polyfilled.js"></script>
+
+									<script type="text/javascript">
+					const player = new Plyr('#player',{
+						title: 'Example Title',
+						controls:['play-large', 'play', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen']
+					});
+				</script>
+						<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9394610f3d390bdc","version":"2025.4.0-1-g37f21b1","r":1,"token":"a03156194d8c41ae9f36c06738fd4f3c","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+<style>
+
+
+body{
+	padding: 0px;
+	margin: 0px;
+	background: black;
+}
+.flix_app_player{
+	height: calc(100% - 50px);
+	width: 100%;
+	background: black;
+	position: absolute;
+}
+footer>img{
+
+	height: 40px;margin-top:4px
+
+}
+footer>a:hover{
+	color: #ccc;
+}
+footer>a{
+    height: 50px;
+    min-width: 3px;
+    display: inline-block;
+    font-size: 18pt;
+    color: white;
+    text-align: center;
+    float: left;
+}
+footer>a>i{
+	line-height: 35px !important;
+}
+footer{
+	position: absolute;
+	bottom: 2px;
+	background: black;
+	height: 50px;
+	width: 100%;align:center
+}
+.sources-dropdown>button{
+	background: black;
+    border: 2px solid white;
+    border-radius: 0px;
+}
+.sources-dropdown > button{
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+}
+.sources-dropdown .dropdown-menu label{
+    margin-left: 5px;
+}
+.sources-dropdown .dropdown-menu{
+	border-radius: 0px;
+    min-width: 10em !important;
+}
+.sources-dropdown .dropdown-menu .dropdown-item{width:35%;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+iframe{
+	height: 100%;
+    width: 100%;
+    border: 0px;}
+*:focus {outline:0 !important;}
+.dropdown-menu{
+	background-color: #00000f !important;
+	border: 1px solid rgba(255, 255, 255, 0.15);margin-right:10px
+}
+.dropdown-item{
+	color: #b3b3b3 !important;
+}
+.dropdown-divider{
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: #141421;
+}
+.video-js{
+	position: initial !important;
+}
+
+.vjs-big-play-button{
+	background: #00b3ff !important;
+    border: 0 !important;
+    border-radius: 100% !important;
+    color: #fff !important;
+    left: 50% !important;
+    opacity: .9 !important;
+    padding: calc(10px * 1.5) !important;
+    padding: calc(var(--plyr-control-spacing,10px) * 1.5) !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translate(-50%,-50%) !important;
+    transition: .3s !important;
+    z-index: 2 !important;
+}
+.vjs-big-play-button{
+    font-size: 3em !important;
+    line-height: 50px !important;
+    height: 50px !important;
+    width: 50px !important;
+}
+.next-episode{
+
+    background: black;
+    border: 2px solid white;
+    color: white;
+    display: inline-block;
+    border-radius: 0px;
+    height: 50px;
+    line-height: 35px;
+    font-weight: bold;
+    box-shadow: 0 0 black;
+    margin-left: 10px;
+    margin-right: 0px;
+
+}
+.next-episode i{
+	line-height: 35px !important;
+}
+.source-btn .fa-star{
+    color: #ff0900;
+}
+
+.for-phone{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .for-phone{
+        display: block;
+    }
+    .for-desktop{
+        display: none;
+    }
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
