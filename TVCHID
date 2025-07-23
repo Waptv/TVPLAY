@@ -1,14 +1,10 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href='https://www.yosintv.link/favicon.ico' rel='icon' type='image/x-icon'/>
-<title> Cricket | Football Live </title>
+
 <style>
 body {
     height: 100vh;
@@ -92,20 +88,3 @@ iframe.src = channels[channel] || channels.skycric;
 }
 setChannel(channel);
 </script>
-
-
-
-        <!-- BEGIN: Powered by Supercounters.com -->
-        <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
-            <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
-            <script type="text/javascript">
-                sc_online_i(1707252,"ffffff","ffffff");
-            </script>
-            <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
-        </div>
-
-    
-</body>
-</html>
-
-
