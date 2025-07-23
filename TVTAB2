@@ -1,0 +1,555 @@
+
+
+
+
+
+
+
+
+    
+
+<style>
+.active{background:red}
+.fix{visibility:hidden}
+.fixed{background:gold;position:fixed}
+.tab-pane{overflow: hidden;
+  border: 1px solid #fff;
+  background-color: #f1f1f1;align:center;vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;} 
+  
+ .tab-content{background:SeaShell;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 14px;  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 64px;
+
+  transition: 0.3s;
+  font-size: 17px;align:center;vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;width:100%}
+
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TV4WAP LIVE4WAP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<!-- Nav tabs -->
+<div class="fixed">
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+
+  <li class="active"><a href="#zero" role="tab" data-toggle="tab"><b>STAR SPORTS</b></a></li>
+<li><a href="#one" role="tab" data-toggle="tab"><b>SONY SPORTS</b></a></li>
+  <li><a href="#two" role="tab" data-toggle="tab"><b>ASIA TV</b></a></li>
+  <li><a href="#three" role="tab" data-toggle="tab"><b>SKY SPORTS</b></a></li>
+  <li><a href="#four" role="tab" data-toggle="tab"><b>WORLD TV</b></a></li>
+  <li><a href="#five" role="tab" data-toggle="tab"><b>OTHER TV</b></a></li>
+
+
+</ul></div>
+
+<div class="fix">
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+  
+  <li class="active"><a href="#zero" role="tab" data-toggle="tab"><b>STAR SPORTS</b></a></li>
+<li><a href="#one" role="tab" data-toggle="tab"><b>SONY SPORTS</b></a></li>
+  <li><a href="#two" role="tab" data-toggle="tab"><b>ASIA SPORTS</b></a></li>
+  <li><a href="#three" role="tab" data-toggle="tab"><b>SKY SPORTS</b></a></li>
+  <li><a href="#four" role="tab" data-toggle="tab"><b>WORLD SPORTS</b></a></li>
+  <li><a href="#five" role="tab" data-toggle="tab"><b>OTHER TV</b></a></li>
+  
+
+</ul></div>
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">      
+<div class="content">
+  
+  <div class="rwd-media">
+     <iframe id="frame"  frameborder="0" src="https://live4wap.neocities.org/TV/ASIA/TSPORT/play" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen  encrypted-media />      </iframe> </center>
+  </div>
+  
+  
+</div>
+
+<div class="content">
+  
+  <div class="rwd-mediaa">
+    <iframe  src="" width="100%" height="252" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+  
+  
+</div>
+
+
+
+
+
+<!-- Tab panes -->
+
+<div class="tab-content">
+  <div class="tab-pane active" id="zero">	
+  
+  
+  
+  <!-- STAR SPORTS ZERO-->
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARS1/play';" ><img class='img' src='https://www.tataplay.com/s3-api/v1/assets/channels/star-sports-1.gif'><p> STAR SPORTS 1   </p></img></a></div>
+
+  
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARS1H/play';" ><img class='img' src='https://cdn.jsdelivr.net/gh/HelloPeopleTv4you/tv-logo@refs/heads/main/crichd2-runded/1-by-xfireflix.png'><p> STAR SPORTS 1 HINDI  </p></img></a></div>
+
+ 
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARS2/play';" ><img class='img' src='https://www.tataplay.com/s3-api/v1/assets/channels/star-sports-2.gif'><p> STAR SPORTS 2 </p></img></a></div>
+
+ 
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARS2H/play';" ><img class='img' src='https://jiotv.catchup.cdn.jio.com/dare_images/images/Sports18_1_SD.png'><p> STAR SPORTS 2  HINDI </p></img></a></div>
+
+ 
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARS3/play';" ><img class='img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAkU80NMsZrnAP2fic0a2LfGe2VjrI6gaZQSkXVBGlUAUODjPMLHwZeIYM&s=10'><p> STAR SPORTS 3   </p></img></a></div>
+
+ 
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARSTA/play';" ><img class='img' src='https://blogger.googleusercontent.com/img/a/AVvXsEiE939VIaZK2NYi2t-mZeC5mRFSHS8FNVN7iyylTUoEgED8tUiSqaB88TjQ9QdhMr68yPZ_jwWPz9rrqIiNJvIJ1pHN7UhdN_eJ-k7eXkTniuABZriLiniPRRGUNzahF1_3qDE2mLxFzfi3cfbHy1TA43-LBVHUmQqU7UPl7DWnnNtQO3HZbP4w4b5-wkY'><p> STAR SPORTS TAMIL  </p></img></a></div>
+
+ 
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARSTE/play';" ><img class='img' src='https://blogger.googleusercontent.com/img/a/AVvXsEjra-mQ3LgvnaE5RsUpx-YEgRZmyH_OojvGfitTe8-kulFyGwf_DKwGRXuU86Yy64SyJ4_stARq0Qj0jFnQw25FuNhQYVWcKCidGAeUcPjUHu9caYyVnC08YYnJESXfWq1iLE6-XhJt7-LCZeHETgcQGNcjGvtRFweaDdtOWEamyvio6qLRIRFggNbCLIY'><p> STAR SPORTS  TELUGU  </p></img></a></div>
+
+ 
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARSKA/play';" ><img class='img' src='https://blogger.googleusercontent.com/img/a/AVvXsEjq8iXqc_nLiWJkyRFpNeILzX4JF6K7lgZMrCFowhU9OCStf8Uj1VJSKAc_ksCzyDQPdFSXI0HvyGCMxO801qoa_piSVzqFJCcVjuDb6ODYE1ipyyMFOL_3Mle1a9WkIsv0lRUnJ50X9PYiS3ko5ZTBFszy2W13qZ3cHVv9xK2FKUtwf6qqyVjoenio-Kw'><p> STAR SPORTS KANNADA  </p></img></a></div>
+
+ 
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARSKH/play';" ><img class='img' src='https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_Khel.png'><p> STAR SPORTS KHEL </p></img></a></div>
+
+ 
+ <div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/STAR/STARSSL/play';" ><img class='img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Star_Sports_Select_logo.png/250px-Star_Sports_Select_logo.png'><p> STAR SPORTS SELECT </p></img></a></div>
+ 
+ 
+
+ 
+ 
+  
+  </div>
+  
+  <div class="tab-pane" id="one">	
+  <!-- SONY SPORTS ONE-->
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SONY/TEN1/play';" ><img class='img' src='https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/20_262.png'><p> SONY SPORTS 1 </p></img></a></div>
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SONY/TEN2/play';" ><img class='img' src='https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/22_261.png'><p> SONY SPORTS 2 </p></img></a></div>
+
+
+
+  <div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SONY/TEN3/play';" ><img class='img' src='https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/24_263.png'><p> SONY SPORTS 3 </p></img></a></div>
+
+  
+  <div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SONY/TEN4/play';" ><img class='img' src='https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/38_264.png'><p> SONY SPORTS 4 </p></img></a></div>
+
+  <div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SONY/TEN5/play';" ><img class='img' src='https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/18_265.png'><p> SONY SPORTS 5 </p></img></a></div>
+
+  
+  
+  </div>
+  
+  <div class="tab-pane" id="two">
+ 	
+ 	<!-- ASIA  TWO-->
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/ASIA/CRICLIFE/play';" ><img class='img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTujIwMBjWejo-hfsA6tuwj2BLQet0GqG1EvDR0kXanbuSwXkljHcAOOjM&s=10'><p> CRICLIFE  TV</p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/ASIA/PTV/play';" ><img class='img' src='https://cdn.jsdelivr.net/gh/HelloPeopleTv4you/tv-logo@refs/heads/main/crichd2-runded/20-by-xfireflix.png'><p> P TV SPORTS </p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/ASIA/TSPORT/play';" ><img class='img' src='https://yt3.googleusercontent.com/eY6Yt0YDmWSheMmneYNjUD_2N5p8r2nFca9CENifrZ9TugWxrQW24oznjqBJPOFmSs2M6avemg=s900-c-k-c0x00ffffff-no-rj'><p> T SPORTS </p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/ASIA/ASPORT/play';" ><img class='img' src='https://cdn.jsdelivr.net/gh/HelloPeopleTv4you/tv-logo@refs/heads/main/crichd2-runded/12-by-xfireflix.png'><p> A SPORTS </p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/ASIA/TENSP/play';" ><img class='img' src='https://cdn.jsdelivr.net/gh/HelloPeopleTv4you/tv-logo@refs/heads/main/crichd2-runded/10-by-xfireflix.png'><p> TEN SPORTS </p></img></a></div>
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/ASIA/TENCR/play';" ><img class='img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl3aN0ryLiLSNAhrnn3MnXSPTtEOKGRhKVRJdp_qligKbpjnkRXmTjD_M&s=10'><p> TEN CRICKET </p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/ASIA/GEOTV/play';" ><img class='img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2JUwjMtW5iu9OvLcdDXDeXEFLbd5c0YpJMqGkNdDqE8yI71sZcNzdqA2&s=10'><p> GEO SPORTS </p></img></a></div>
+
+
+ 	
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/ASIA/GAZITV/play';" ><img class='img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpEv35r2KryJdb3NkSJqHUMdrtdNrNwiqK4fZPifvFd32g77a6m8PNo8s&s=10'><p>  GAZI TV </p></img></a></div>
+
+
+ 	
+ 	
+ 	</div>
+ 	
+ <div class="tab-pane" id="three">
+ 
+ <!-- SKY SPORTS THREE-->
+
+
+
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SKY/SKYCRIC/play';" ><img class='img' src='https://wapka-img.zuna.id/3d2ae3b3.jpeg'><p> SKY CRICKET</p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SKY/SKYMIX/play';" ><img class='img' src='https://cdn.jsdelivr.net/gh/HelloPeopleTv4you/tv-logo@refs/heads/main/crichd2-runded/13-by-xfireflix.png'><p> SKY MIX</p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SKY/SKYMAIN/play';" ><img class='img' src='https://wapka-img.zuna.id/abb61b95.png'><p> SKY MAINEVENT </p></img></a></div>
+
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SKY/SKY1NZ/play';" ><img class='img' src='https://wapka-img.zuna.id/5a6a67b0.png'><p> SKY 1 NZ</p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SKY/SKY2NZ/play';" ><img class='img' src='https://wapka-img.zuna.id/ed6e2877.png'><p> SKY 2 NZ</p></img></a></div>
+
+
+
+ 
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/SKY/SKY3NZ/play';" ><img class='img' src='https://wapka-img.zuna.id/3d2c7083.png'><p> SKY 3 NZ</p></img></a></div>
+
+
+ 
+ 
+ 
+  </div>
+  
+  <div class="tab-pane" id="four">
+  
+  <!-- WORLD  FOUR-->
+
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/WILLOWT/play';" ><img class='img' src='https://cdn.jsdelivr.net/gh/HelloPeopleTv4you/tv-logo@refs/heads/main/crichd2-runded/38-by-xfireflix.png'><p> WILLOW TV </p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/WILLOWX/play';" ><img class='img' src='https://cdn.jsdelivr.net/gh/HelloPeopleTv4you/tv-logo@refs/heads/main/crichd2-runded/8-by-xfireflix.png'><p>  WILLOW XTRA</p></img></a></div>
+
+
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/ASTRO/play';" ><img class='img' src='https://cdn.jsdelivr.net/gh/HelloPeopleTv4you/tv-logo@refs/heads/main/crichd2-runded/1745008895589.png'><p> ASTRO CRICKET </p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/SCRIC/play';" ><img class='img' src='https://wapka-img.zuna.id/a9c2cd43.png'><p> S  CRICKET</p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/FOX/play';" ><img class='img' src='https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Fox_Cricket_Logo.png/150px-Fox_Cricket_Logo.png'><p> FOX CRICKET 501 </p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/SGRAND/play';" ><img class='img' src='https://wapka-img.zuna.id/abb61b95.png'><p> S GRANDSTAND</p></img></a></div>
+
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/WILLOWS/play';" ><img class='img' src='https://bobgoldpr.com/wp-content/uploads/2024/10/Willow-Sports-Stacked-Logo-White-e1728946503266.png'><p> WILLOW SPORTS </p></img></a></div>
+
+
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/TNT1/play';" ><img class='img' src='https://wapka-img.zuna.id/29919308.jpeg'><p> TNT SPORTS 1</p></img></a></div>
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/TNT2/play';" ><img class='img' src='https://wapka-img.zuna.id/e090fdfd.jpeg'><p> TNT SPORTS 2</p></img></a></div>
+<div align='center' class='rsz'><a onclick="document.getElementById('frame').src ='https://live4wap.neocities.org/TV/WORLD/TNT3/play';" ><img class='img' src='https://wapka-img.zuna.id/7db078ad.jpeg'><p> TNT SPORTS 3</p></img></a></div>
+
+
+
+
+
+
+
+
+
+  
+  
+  </div>
+  
+ <div class="tab-pane" id="five">
+  
+  
+  
+  <!--OTHER  FIVE-->
+
+
+
+
+
+
+
+  
+  
+  </div>
+    
+ 
+
+</div>
+
+
+
+
+<style>
+body{width:100%;background:PapayaWhip;margin:0} 
+.rsz{width:23%;display:inline-block;
+background:fff;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 9px;
+  border-radius: 0px;
+  margin: 1px 1px 1px 1px;
+  height: 90px;
+  font-weight:bold ;
+  border-top: 1px solid #3692e0;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-bottom: 1px solid #3692e0; transition: 0.5s;
+  box-shadow: inset 0px 0px 3px 2px rgba(142, 139, 139, 0.5);
+vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;}
+.img{border: px solid white;border-radius: 1px;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;margin:0px;img-align: center;width:65%;height:40px;image-rendering: auto;margin-right:5px;margin-left:5px; margin-top:10px;margin-bottom:10px}        a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none;} 
+  
+
+
+  
+      .rwd-mediaa{
+  position: ;
+  width: 100%;
+  height: 231px;
+  
+}
+
+.rwd-mediaa iframe,
+.rwd-media video {background:#fff;
+  position: ;
+  width: 100%;
+  height: 231px;  
+}
+
+.rwd-media {background:#000000;
+  position:fixed ;
+  width: 100%;
+  height: 1px;
+  
+}
+
+.rwd-media iframe,
+.rwd-media video {background:#000;
+  position: fixed;
+  width: 100%;
+  height: calc(260px + 1px); top:80px;
+}
+ 
+    </style>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>// Disable Right Mouse Click Using jQuery
+$(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+     
+    //Disable part of page
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+//Disable Cut, Copy, Paste Using jQuery
+$(document).ready(function () {
+    //Disable full page
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+     
+    //Disable part of page
+    $('#id').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+});
+
+//Disable Right Mouse Click & Cut, Copy, Paste Using jQuery
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+    
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});</script>
+    
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+<style>
+
+.content-table {
+              text-align: center;position: fixed; 
+            color: #333;position: fixed;bottom:1px;
+
+  ;text-align:center;background-color:red; border-collapse: collapse; margin: 1px 0;
+
+  font-size: 0.9em;
+
+  min-width: 100%;
+
+  border-radius: 3px ;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.content-table thead tr {
+
+  
+background-color:gold;
+  color: #ffffff;
+
+  text-align: center;
+
+  font-weight: bold
+
+}
+
+.content-table th,
+
+.content-table td {color:#fff;
+
+  padding:  1px;border:1px solid gold;background:}
+
+.content-table tbody tr {
+
+  border: 1px solid #dddddd;
+
+}
+
+
+.content-table tbody tr:nth-of-type(even) {
+
+  background-color: #f3f3f3;
+
+}
+
+.content-table tbody tr:last-of-type {
+
+  border: px solid #009879;
+
+}
+
+.content-table tbody tr.active-row {
+
+  font-weight: bold;
+
+  color: #009879;
+
+}
+
+</style>
+
+<table class="content-table">
+  <thead> 
+    <tr>
+      <th width="30%"><a href="https://t.me/tvgotk"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgS2KS8R90zouZEqp4NV8v8mXnUaa0CH4ms-RUnJnRLmYj5zdegccxN10-YXkJArUDOzCjksz77YlETLC63edZYUaDyYBaMPWDVDuyDjYV5bhhhYa5FYgu2qHkd0FcCq-Au_2YXSYza4YGnv1WgRR2O_caQI8nR6SRPJFqKVQICOnjzWhsi3VWe5Nzjewg" width="90%" height="40px"></a></th>
+            <td><a href="https://t.me/tvgotk"><button><b>t.me/tvgotk</b> </button></a></td>
+
+      
+      <th width="30%"><a href="https://t.me/tv4wap"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgdW6vop6CO-Sw5e7USP7uj_dCdoQJWSYALuTqDa0Kh5m7H0jl1rSMltPVtDrlKIWPxGe5HLwMd8z_TnDWYFB-ePgb_DbI5LJozDpyvP0L7sK-W422Cm02k3hzZ0XzNhYaJ2A80MT5l7nlebxLL16uFvTKSNRPNr3Ctb51dVMShgVNDsu5XHpCtdVSbW0g" width="90%" height="40px"></a></th>      <td><a href="https://t.me/tv4wap"> <button><b>t.me/tv4wap</b></button> </a></td> </tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
