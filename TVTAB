@@ -1,0 +1,192 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+
+
+<style>
+a:link, a:visited {
+  
+  color: white;
+  
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: black;
+}
+    :root {
+      --bg-color: #000;
+      --text-color: #fff;
+      --category-bg: #222;
+      --category-active: #4CAF50;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+
+
+
+
+
+
+
+    .category-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
+      background: var(--category-bg);
+      align-items: center;
+    }
+
+    .category-bar button {
+      background: var(--category-bg);
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .category-bar button.active {
+      background: var(--category-active);
+    }
+
+    .dark-toggle {
+      margin-left: auto;
+      padding: 8px 14px;
+      border-radius: 20px;
+      background: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .channel-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      padding: 5px;
+    }
+
+    .channel {
+      background: #111;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .channel img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+
+    .channel p {
+      margin: 5px 0 0;
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/shaka-player.compiled.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/hls.js@latest'></script>
+
+
+    
+    </div>
+  
+
+  <div class="category-bar">
+    <button class="active" onclick="filterCategory('BANGLA', event)">BANGLA</button>
+    <button onclick="filterCategory('INDIAN', event)">INDIAN</button>
+    <button onclick="filterCategory('SPORTS', event)">SPORTS</button>
+    
+  </div>
+
+  <div class="channel-grid" id="channelGrid"></div>
+
+  <script>
+    
+    
+    
+
+    
+
+    const channels = [
+     { name: "T Play", url: "https://cloudfrontnet.vercel.app/tplay/playout/209587/master.m3u8", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJgmm6KFSPHFm6DoV6ubV_xciWySkkHCoqwGzLfc-nk-RCzg2T_J1j0nK415N0IHwlkIfUE5QqYfcJecIoZhgKIdrZYsuKumHNZu1tPL24Evvqdcb68wHAZNu25NUiDmhukteU4ld0Wll3U9p4SlsXUSUMw7bgahkcoz9NgRCrrIGQcKiENy9mfy75z4I/s1600/NadimRazaTV%20154215.png", category: "BANGLA" },
+      
+      
+   { name: "BanglaWaz", url: "https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg29l_5RPj9sCjISPOeVxEzrz2NNj4hsplyU-jb4_cNN1WuVrxxxhwX4dD2xV0pXSsou9bEXBflg7IOFGx4gV69cZG0Gi96i1YTlgt9VkPiJ_SVCnWKzz-gtVZJwxe4CuXNgvPjAUa34HPSsYL95V6CyNTxMzPwPsurRHvaAY5VyUVxN60gL1udsSUFJOo/s1600/NadimRazaTV%2012456.png", category: "BANGLA" },
+      
+      
+   { name: "NatokBD", url: "https://cloudfrontnet.vercel.app/tplay/playout/209593/master.m3u8", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiG7AA6JoJfhE07FTDgEoKr7lg66z3kVVf0K_V0tW-_3ZZzVWLtVNQbEnbOeQulkks6aoPtydJpw1Rj_8jkhTa1QSvwz2SGqZ8bDsbnZEpQBbZ4MXKWTe4AM8jRMd-tmd8jqFHTaEEw9SKNK1-FFVAwMn9fkvsOQ-JYNZnWD9T7FgI-lJsQBoTrzcuAoNM/s1600/NadimRazaT554547.png", category: "BANGLA" },
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+
+      
+
+      { name: "Somoy", url: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYCgcsRHgXpA0wPwSYvoTEbPdVaxO50Q8nF02WzdMlBNxpcHgDhUmEJ3qb-yqIUGYTIecb32wJECeQEs7bJ9zVONg-26DIKkjvESJkeSKYe1qtXkYt8Nz4jE85EFkWUQbHk7oRj_1QgOLQZqxZEbigDfrq8CG0rKoNXVgWplPu8Rw4or6sMhgIQTXIWZE/s1600/BangladeshiNewsChannelLogoDesign_copy_900x900.png", category: "BANGLA" }
+
+    ];
+function filterCategory(cat, event) {
+      document.querySelectorAll('.category-bar button').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      document.querySelectorAll('.channel').forEach(el => {
+        el.style.display = (cat === el.dataset.category) ? 'block' : 'none';
+      });
+    }
+
+    
+
+    function loadChannels() {
+      
+      channels.forEach(ch => {
+        const div = document.createElement("div");
+        div.className = "channel";
+        div.dataset.category = ch.category;
+        div.innerHTML = `<a href="${ch.url}"><img src="${ch.img}" alt="${ch.name}"><p>${ch.name}</p></a>`;
+       
+div.onclick = () => switchChannel(ch.url);
+        channelGrid.appendChild(div);
+
+
+      });
+      filterCategory('BANGLA', { target: document.querySelector('button[onclick*="BANGLA"]') });
+    }
+
+    
+
+
+
+
+
+    
+    
+    loadChannels();
+   
+  </script>
