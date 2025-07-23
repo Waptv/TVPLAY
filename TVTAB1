@@ -1,0 +1,671 @@
+
+
+    
+
+<style>
+.active{background:red}
+.fix{visibility:hidden}
+.fixed{align:center;background:gold;position:fixed}
+.tab-pane{overflow: hidden;
+  border: 1px solid #fff;
+  background-color: #f1f1f1;align:center;vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;} 
+  
+ .tab-content{background:SeaShell;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 10px;  padding-left: 8px;
+  padding-right: 4px;
+  padding-bottom: 64px;
+
+  transition: 0.3s;
+  font-size: 17px;align:center;vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;width:100% !important}
+
+
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> TV4WAP LIVE4WAP </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<!-- Nav tabs -->
+   <div class="fixed">
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+
+
+
+  <li class="active"><a href="#iptv" role="tab" data-toggle="tab"><b>IPTV</b></a></li>
+
+
+  <li><a href="#zero" role="tab" data-toggle="tab"><b>JIO TV</b></a></li>
+
+  <li><a href="#one" role="tab" data-toggle="tab"><b>CRICHD</b></a></li>
+  <li><a href="#two" role="tab" data-toggle="tab"><b>DADDY</b></a></li>
+  <li><a href="#three" role="tab" data-toggle="tab"><b>ZEE5 TV</b></a></li>
+  <li><a href="#four" role="tab" data-toggle="tab"><b>TOFFEE</b></a></li>
+  <li><a href="#five" role="tab" data-toggle="tab"><b>TATAPLAY</b></a></li>
+  <li><a href="#six" role="tab" data-toggle="tab"><b>JADOO</b></a></li>
+  <li><a href="#seven" role="tab" data-toggle="tab"><b>VOOT</b></a></li>
+</ul></div>
+
+<div class="fix">
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+  <li class="active"><a href="#iptv" role="tab" data-toggle="tab"><b>IPTV</b></a></li>
+
+  <li><a href="#zero" role="tab" data-toggle="tab"><b>CRICKET TV</b></a></li>
+  <li><a href="#one" role="tab" data-toggle="tab"><b>CRICHD</b></a></li>
+  <li><a href="#two" role="tab" data-toggle="tab"><b>DADDY</b></a></li>
+  <li><a href="#three" role="tab" data-toggle="tab"><b>JIO TV</b></a></li>
+  <li><a href="#four" role="tab" data-toggle="tab"><b>TOFFEE</b></a></li>
+  <li><a href="#five" role="tab" data-toggle="tab"><b>TATAPLAY</b></a></li>
+  <li><a href="#six" role="tab" data-toggle="tab"><b>JADOO</b></a></li>
+  <li><a href="#seven" role="tab" data-toggle="tab"><b>VOOT</b></a></li>
+</ul></div>
+
+
+
+
+
+<div class="content">
+  
+  <div class="rwd-media">
+     <iframe name="frame"  frameborder="0" src="https://live4wap.neocities.org/APPTV/zee5?id=ed068cf84f0640ccbc7c0e395c0a272e" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen>      </iframe> </center>
+  </div>
+  
+  
+</div>
+
+<div class="content">
+  
+  <div class="rwd-mediaa">
+    <iframe  src="" width="100%" height="252" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+  
+  
+</div>
+
+
+<!-- Tab panes -->
+
+
+
+
+<div class="tab-content">
+
+
+  <div class="tab-pane active" id="iptv">	<main id="app" ></main></div>
+
+  <div class="tab-pane" id="zero">	
+<div class="group-filter">   <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search Channels" onkeyup="searchChannels()">
+<select id="group-select" onchange="filterChannels()">
+            <option value="all">All</option>
+            <option value='Entertainment'>Entertainment</option><option value='Movies'>Movies</option><option value='Kids'>Kids</option><option value='Sports'>Sports</option>
+<option value='News'>News</option>  
+<option value='Music'>Music</option> <option value='Lifestyle'>Lifestyle</option><option value='Infotainment'>Infotainment</option>  
+<option value='Devotional'>Devotional</option> <option value='Educational'>Educational</option><option value='Business'>Business</option>  
+       </select>
+</div></div>
+<main id="app0" ></main></div>
+  
+  <div class="tab-pane" id="one">	<main id="app1" ></main></div>
+  
+  <div class="tab-pane" id="two">
+
+ <div class="group-filter">   <div class="search-bar">
+        <input type="text" id="search-inputt" placeholder="Search Channels" onkeyup="searchChannelss()">
+
+</div></div>	
+ 	<main id="app2"></main> 
+    
+</div>
+ 	
+ <div class="tab-pane" id="three">
+ <main id="app3"></main> </div>
+  
+  <div class="tab-pane" id="four">
+  <main id="app4"></main></div>
+  
+ <div class="tab-pane" id="five">
+  <main id="app5"></main></div>
+    
+ <div class="tab-pane" id="six">
+  <main id="app6"></main></div>
+    
+ <div class="tab-pane" id="seven">
+  <main id="app7"></main></div>
+  
+</div>
+
+<!-- IPTV-->
+
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/iptv.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='" + item.genre + "'  data-name='" + item.name+ "'><a target ='frame' href='https://tvlive.wapka.xyz/"+item.id+"?"+item.url+"'><img class='img' src='"+item.logo+"'> <p>"+item.name+"</p></img></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<!-- JIOTV ZERO-->
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/jio.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='" + item.genre + "'  data-name='" + item.title + "'><a target ='frame' href='https://live4wap.neocities.org/APPTV/jio?id="+item.id+"'><img class='img' src='"+item.logo+"'> <p>"+item.title+"</p></img></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app0" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+<!-- CRICHD  ONE-->
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/crichd.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='CRICHD'  data-name='" + item.name + "'><a target ='frame' href='https://live4wap.neocities.org/APPTV/crichd?id="+item.id+"'><img class='img' src='"+item.logo+"'> <p>"+item.name+"</p></img></a></div></div>"; })
+
+ .join("");
+ console.log(html);
+document.querySelector("#app1" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+<!-- DADDY  TWO-->
+
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/daddy.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rszz' data-group='" + item.genre + "'  data-namee='" + item.title + "'><a target ='frame' href='https://live4wap.neocities.org/APPTV/daddy?id="+item.id+"'><p>"+item.title+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app2" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+<!-- ZEE5  THREE-->
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/zee5.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='JIOTV'  data-name='" + item.name + "'><a target='frame' href='https://live4wap.neocities.org/APPTV/zee5?id="+item.id1+"'><img class='img' src='"+item.logo+"'> <p>"+item.name+"</p></img></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app3" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+
+
+<!-- TOFFEE  FOUR-->
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/toffee.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='TOFFEE'  data-name='" + item.title + "'><a target='frame' href='https://live4wap.neocities.org/APPTV/toffee?id="+item.name+"'><img class ='img' src='"+item.logo+"'> <p>"+item.title+"</p></img></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app4" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+
+
+<!-- TATAPLAY FIVE-->
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/tataplay.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='TATA PLAY'  data-name='" + item.name + "'><a target='frame' href='"+item.id+"'><img class='img' src='"+item.logo+"'> <p>"+item.name+"</p></img></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app5" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+
+<!--JADOO  SIX-->
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/jadoo.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='JADOO'  data-name='" + item.name + "'><a target='frame' href='https://live4wap.neocities.org/APPTV/jadoo?id="+item.slug+"'><img class='img' src='"+item.logo+"'> <p>"+item.name+"</p></img></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app6" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/jagobd.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='JADOO'  data-name='" + item.name + "'><a target='frame' href='https://live4wap.neocities.org/APPTV/jagobd?id="+item.id+"'><img class='img' src='"+item.logo+"'> <p>"+item.name+"</p></img></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app6" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+<!-- VOOT  SEVEN-->
+
+
+<script>
+function getData() {fetch("https://live4wap.neocities.org/SPORTS/voot.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='VOOT'  data-name='" + item.name + "'><a target='frame' href='https://live4wap.neocities.org/APPTV/voot?id="+item.id+"'><img class='img' src='"+item.logo+"'> <p>"+item.name+"</p></img></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app7" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body{width:100%;background:PapayaWhip;margin:0} 
+.rsz{width:23%;display:inline-block;
+background:fff;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 9px;
+  border-radius: 0px;
+  margin: 1px 1px 1px 1px;
+  height: 90px;
+  font-weight:bold ;
+  border-top: 1px solid #3692e0;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-bottom: 1px solid #3692e0; transition: 0.5s;
+  box-shadow: inset 0px 0px 3px 2px rgba(142, 139, 139, 0.5);
+vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;}
+.img{border: px solid white;border-radius: 1px;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;margin:0px;img-align: center;width:65%;height:40px;image-rendering: auto;margin-right:5px;margin-left:5px; margin-top:10px;margin-bottom:10px}   
+
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none;} 
+  
+  .group-filter {background:#A8E4A0;padding:0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+        .group-filter select, .search-bar input {
+            padding: 4px;
+            font-size: 12px;
+            border-radius: 15px;
+            border: 2px solid #A8E4A0;
+            background-color: #fff;
+            color: #333;
+        }
+        .search-bar {padding:4px;
+            text-align: center;
+            margin-bottom: 2px;border: 2px solid #A8E4A0;
+        }
+ 
+      .rwd-mediaa{
+  position: ;
+  width: 100%;
+  height: 214px;
+  
+}
+
+.rwd-mediaa iframe,
+.rwd-media video {background:#fff;
+  position: ;
+  width: 100%;
+  height: 214px;  
+}
+
+.rwd-media {background:#000000;
+  position:fixed ;
+  width: 100%;
+  height: 1px;
+  
+}
+
+.rwd-media iframe,
+.rwd-media video {background:#000;
+  position: fixed;
+  width: 100%;
+  height: calc(220px + 1px); top:80px;
+}
+
+
+.rszz{width:23%;display:inline-block;
+background:fff;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 9px;
+  border-radius: 0px;
+  margin: 1px 1px 1px 1px;
+  height: 30px;
+  font-weight:bold ;
+  border-top: 1px solid #3692e0;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-bottom: 1px solid #3692e0; transition: 0.5s;
+  box-shadow: inset 0px 0px 3px 2px rgba(142, 139, 139, 0.5);
+vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;margin-right:px;margin-left:px; margin-top:7px;margin-bottom:7px;padding-right:3px;padding-left:3px; padding-top:7px;padding-bottom:7px}
+
+}
+ 
+    </style>
+    
+    
+    
+    
+    <script>
+        function filterChannels() {
+            var selectedGroup = document.getElementById('group-select').value;
+            var channels = document.querySelectorAll('.rsz');
+            
+            channels.forEach(function(channel) {
+                if (selectedGroup === 'all' || channel.getAttribute('data-group') === selectedGroup) {
+                    channel.style.display = 'inline-block';
+                } else {
+                    channel.style.display = 'none';
+                }
+            });
+        }
+
+        function searchChannels() {
+            var input = document.getElementById('search-input').value.toLowerCase();
+            var channels = document.querySelectorAll('.rsz');
+            channels.forEach(function(channel) {
+                var name = channel.getAttribute('data-name').toLowerCase();
+                if (name.includes(input)) {
+                    channel.style.display = 'inline-block';
+                } else {
+                    channel.style.display = 'none';
+                }
+            });
+        }
+        
+           function searchChannelss() {
+            var input = document.getElementById('search-inputt').value.toLowerCase();
+            var channels = document.querySelectorAll('.rszz');
+            channels.forEach(function(channel) {
+                var name = channel.getAttribute('data-namee').toLowerCase();
+                if (name.includes(input)) {
+                    channel.style.display = 'inline-block';
+                } else {
+                    channel.style.display = 'none';
+                }
+            });
+        }
+        
+       
+        
+const checkbox = document.getElementById("checkbox");
+        checkbox.addEventListener("change", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    <script>// Disable Right Mouse Click Using jQuery
+$(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+     
+    //Disable part of page
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+//Disable Cut, Copy, Paste Using jQuery
+$(document).ready(function () {
+    //Disable full page
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+     
+    //Disable part of page
+    $('#id').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+});
+
+//Disable Right Mouse Click & Cut, Copy, Paste Using jQuery
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+    
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});</script>
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+<style>
+
+.content-table {
+              text-align: center;position: fixed; 
+            color: #333;position: fixed;bottom:1px;
+
+  ;text-align:center;background-color:red; border-collapse: collapse; margin: 1px 0;
+
+  font-size: 0.9em;
+
+  min-width: 100%;
+
+  border-radius: 3px ;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.content-table thead tr {
+
+  
+background-color:gold;
+  color: #ffffff;
+
+  text-align: center;
+
+  font-weight: bold
+
+}
+
+.content-table th,
+
+.content-table td {color:#fff;
+
+  padding:  1px;border:1px solid gold;background:}
+
+.content-table tbody tr {
+
+  border: 1px solid #dddddd;
+
+}
+
+
+.content-table tbody tr:nth-of-type(even) {
+
+  background-color: #f3f3f3;
+
+}
+
+.content-table tbody tr:last-of-type {
+
+  border: px solid #009879;
+
+}
+
+.content-table tbody tr.active-row {
+
+  font-weight: bold;
+
+  color: #009879;
+
+}
+
+</style>
+
+<table class="content-table">
+  <thead> 
+    <tr>
+      <th width="30%"><a href="https://t.me/tvgotk"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgS2KS8R90zouZEqp4NV8v8mXnUaa0CH4ms-RUnJnRLmYj5zdegccxN10-YXkJArUDOzCjksz77YlETLC63edZYUaDyYBaMPWDVDuyDjYV5bhhhYa5FYgu2qHkd0FcCq-Au_2YXSYza4YGnv1WgRR2O_caQI8nR6SRPJFqKVQICOnjzWhsi3VWe5Nzjewg" width="90%" height="40px"></a></th>
+            <td><a href="https://t.me/tvgotk"><button><b>t.me/tvgotk</b> </button></a></td>
+
+      
+      <th width="30%"><a href="https://t.me/tv4wap"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgdW6vop6CO-Sw5e7USP7uj_dCdoQJWSYALuTqDa0Kh5m7H0jl1rSMltPVtDrlKIWPxGe5HLwMd8z_TnDWYFB-ePgb_DbI5LJozDpyvP0L7sK-W422Cm02k3hzZ0XzNhYaJ2A80MT5l7nlebxLL16uFvTKSNRPNr3Ctb51dVMShgVNDsu5XHpCtdVSbW0g" width="90%" height="40px"></a></th>      <td><a href="https://t.me/tv4wap"> <button><b>t.me/tv4wap</b></button> </a></td> </tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
