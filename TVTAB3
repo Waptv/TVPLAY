@@ -1,0 +1,694 @@
+
+
+    
+
+<style>
+.active{background:red}
+.fix{visibility:hidden}
+.fixed{background:gold;position:fixed}
+.tab-pane{overflow: hidden;
+  border: 1px solid #fff;
+  background-color: #f1f1f1;align:center;vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;} 
+  
+ .tab-content{background:SeaShell;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 14px;  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 64px;
+
+  transition: 0.3s;
+  font-size: 17px;align:center;vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;width:100%}
+
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TV4WAP LIVE4WAP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<!-- Nav tabs -->
+<div class="fixed">
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+
+  <li class="active"><a href="#zero" role="tab" data-toggle="tab"><b>ENTERTAINMENT</b></a></li>
+
+  <li><a href="#one" role="tab" data-toggle="tab"><b>MOVIES</b></a></li>
+  <li><a href="#two" role="tab" data-toggle="tab"><b>KIDS</b></a></li>
+  <li><a href="#three" role="tab" data-toggle="tab"><b>LIFESTYLE</b></a></li>
+  <li><a href="#four" role="tab" data-toggle="tab"><b>BHAKTI</b></a></li>
+  <li><a href="#five" role="tab" data-toggle="tab"><b>MUSIC</b></a></li>
+  <li><a href="#six" role="tab" data-toggle="tab"><b>NEWS</b></a></li>
+
+</ul></div>
+
+<div class="fix">
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+  <li class="active"><a href="#zero" role="tab" data-toggle="tab"><b>ENTERTAINMENT </b></a></li>
+  <li><a href="#one" role="tab" data-toggle="tab"><b>MOVIES</b></a></li>
+  <li><a href="#two" role="tab" data-toggle="tab"><b>KIDS</b></a></li>
+  <li><a href="#three" role="tab" data-toggle="tab"><b>LIFESTYLE</b></a></li>
+  <li><a href="#four" role="tab" data-toggle="tab"><b>BHAKTI</b></a></li>
+  <li><a href="#five" role="tab" data-toggle="tab"><b>MUSIC</b></a></li>
+  <li><a href="#six" role="tab" data-toggle="tab"><b>NEWS</b></a></li>
+
+</ul></div>
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">      
+<div class="content">
+  
+  <div class="rwd-media">
+     <iframe  name="frame" frameborder="0" src="https://tvlive.wapka.xyz/p14?c=https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeetv/default/manifest.mpd&c1=ed068cf84f0640ccbc7c0e395c0a272e&c2=bb722190f2bb446391020411a7d0828b" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen  encrypted-media />      </iframe> </center>
+  </div>
+  
+  
+</div>
+
+<div class="content">
+  
+  <div class="rwd-mediaa">
+    <iframe  src="" width="100%" height="252" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+  
+  
+</div>
+
+
+
+
+
+<!-- Tab panes -->
+
+<div class="tab-content">
+  <div class="tab-pane active" id="zero">	<main id="app0" ></main></div>
+  
+  <div class="tab-pane" id="one">	<main id="app1" ></main></div>
+  
+  <div class="tab-pane" id="two">
+ 	<main id="app2"></main> </div>
+ 	
+ <div class="tab-pane" id="three">
+ <main id="app3"></main> </div>
+  
+  <div class="tab-pane" id="four">
+  <main id="app4"></main></div>
+  
+ <div class="tab-pane" id="five">
+  <main id="app5"></main></div>
+    
+ <div class="tab-pane" id="six">
+  <main id="app6"></main></div>
+
+</div>
+
+
+
+<!-- ENTERTAINMENT TV ZERO-->
+
+
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/ENT.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='ENTERTAINMENT'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app0" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/ENTT.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='ALLTV'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app0" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+<script>
+function getData() { fetch("https://tv4wap.neocities.org/MPD/ENT.txt")
+.then(res => { return res.json(); })
+.then(json => { console.log(json.data); const html  = json.list
+ .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='mpd'  data-name='" +item.name+"'><a  target='frame' href='https://tvlive.wapka.xyz/p14?c="+item.id+"&c1="+item.id1+"&c2="+item.id2+"'><p>"+ item.name+"</p></a></img></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app0" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/APPTV/ENT.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz1' data-group='ALLCH'  data-name='" + item.name + "'><a  target='frame' href='"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app0" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<!-- MOVIES  ONE-->
+
+
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/MOVIES.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+  return  " <div align='center' class='rsz' data-group='MOVIES'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+
+
+ .join("");
+ console.log(html);
+document.querySelector("#app1" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+<script>
+function getData() { fetch("https://tv4wap.neocities.org/MPD/MOVIES.txt")
+.then(res => { return res.json(); })
+.then(json => { console.log(json.data); const html  = json.list
+ .map(function(item) {
+return  " <div align='center' class='rsz' data-group='mmpd'  data-name='" +item.name+"'><a  target='frame' href='https://tvlive.wapka.xyz/p14?c="+item.id+"&c1="+item.id1+"&c2="+item.id2+"'><p>"+ item.name+"</p></a></img></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app1" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/MOVIESS.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='MOVIESS'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app1" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/APPTV/MOVIES.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz1' data-group='ALLCH'  data-name='" + item.name + "'><a  target='frame' href='"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app1" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<!-- KIDS TWO-->
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/KIDS.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='KIDS'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app2" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/KIDSS.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='VOOT'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app2" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+<!-- LIFESTYLE  THREE-->
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/LIFESTYLE.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+  return  " <div align='center' class='rsz' data-group='VOOT'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app3" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+<script>
+function getData() { fetch("https://tv4wap.neocities.org/MPD/LIFESTYLE.txt")
+.then(res => { return res.json(); })
+.then(json => { console.log(json.data); const html  = json.list
+ .map(function(item) {
+return  " <div align='center' class='rsz' data-group='mmpd'  data-name='" +item.name+"'><a  target='frame' href='https://tvlive.wapka.xyz/p14?c="+item.id+"&c1="+item.id1+"&c2="+item.id2+"'><p>"+ item.name+"</p></a></img></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app3" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+<!-- DEVOTIONAL  FOUR-->
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/BHAKTI.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+  return  " <div align='center' class='rsz' data-group='VOOT'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app4" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--MUSIC  FIVE-->
+
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/MUSIC.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='VOOT'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p15?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app5" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/MUSICC.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='VOOT'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app5" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+<script>
+function getData() { fetch("https://tv4wap.neocities.org/MPD/MUSIC.txt")
+.then(res => { return res.json(); })
+.then(json => { console.log(json.data); const html  = json.list
+ .map(function(item) {
+return  " <div align='center' class='rsz' data-group='mmpd'  data-name='" +item.name+"'><a  target='frame' href='https://tvlive.wapka.xyz/p14?c="+item.id+"&c1="+item.id1+"&c2="+item.id2+"'><p>"+ item.name+"</p></a></img></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app5" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<!-- NEWS SIX-->
+
+
+<script>
+function getData() {fetch("https://tv4wap.neocities.org/IPTV/NEWS.txt")
+ .then(res => {return res.json(); }) 
+ .then(json => {console.log(json.data);const html  = json.list
+  .map(function(item) {
+ return  " <div align='center' class='rsz' data-group='VOOT'  data-name='" + item.name + "'><a  target='frame' href='https://tvlive.wapka.xyz/p16?"+item.id+"'><p>"+item.name+"</p></a></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app6" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+<script>
+function getData() { fetch("https://tv4wap.neocities.org/MPD/NEWS.txt")
+.then(res => { return res.json(); })
+.then(json => { console.log(json.data); const html  = json.list
+ .map(function(item) {
+return  " <div align='center' class='rsz' data-group='newsmpd'  data-name='" +item.name+"'><a  target='frame' href='https://tvlive.wapka.xyz/p14?c="+item.id+"&c1="+item.id1+"&c2="+item.id2+"'><p>"+ item.name+"</p></a></img></div></div>"; })
+ .join("");
+ console.log(html);
+document.querySelector("#app6" ).insertAdjacentHTML("afterbegin", html); })
+ .catch(error => { console.log(error); });}
+getData();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body{width:100%;background:PapayaWhip;margin:0} 
+
+
+.rsz{width:23%;display:inline-block;
+background:fff;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 9px;
+  border-radius: 0px;
+  margin: 1px 1px 1px 1px;
+  height: 30px;
+  font-weight:bold ;
+  border-top: 1px solid #3692e0;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-bottom: 1px solid #3692e0; transition: 0.5s;
+  box-shadow: inset 0px 0px 3px 2px rgba(142, 139, 139, 0.5);
+vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;margin-right:px;margin-left:px; margin-top:7px;margin-bottom:7px;padding-right:3px;padding-left:3px; padding-top:7px;padding-bottom:7px}
+
+
+.rsz1{width:23%;display:inline-block;
+background:gold;
+  line-height: 1;
+  text-decoration: none;
+  color: red;
+  font-size: 9px;
+  border-radius: 0px;
+  margin: 1px 1px 1px 1px;
+  height: 30px;
+  font-weight:bold ;
+  border-top: 1px solid #3692e0;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-bottom: 1px solid #3692e0; transition: 0.5s;
+  box-shadow: inset 0px 0px 3px 2px rgba(142, 139, 139, 0.5);
+vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;margin-right:px;margin-left:px; margin-top:7px;margin-bottom:7px;padding-right:3px;padding-left:3px; padding-top:7px;padding-bottom:7px}
+
+
+
+
+.img{border: px solid white;border-radius: 1px;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;margin:0px;img-align: center;width:65%;height:40px;image-rendering: auto;margin-right:5px;margin-left:5px; margin-top:10px;margin-bottom:10px}        a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none;} 
+
+  
+      .rwd-mediaa{
+  position: ;
+  width: 100%;
+  height: 228px;
+  
+}
+
+.rwd-mediaa iframe,
+.rwd-media video {background:#fff;
+  position: ;
+  width: 100%;
+  height: 228px;  
+}
+
+.rwd-media {background:#000000;
+  position:fixed ;
+  width: 100%;
+  height: 1px;
+  
+}
+
+.rwd-media iframe,
+.rwd-media video {background:#000;
+  position: fixed;
+  width: 100%;
+  height:220px ;  left:0px;
+}
+ 
+    </style>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>// Disable Right Mouse Click Using jQuery
+$(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+     
+    //Disable part of page
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+
+//Disable Cut, Copy, Paste Using jQuery
+$(document).ready(function () {
+    //Disable full page
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+     
+    //Disable part of page
+    $('#id').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+});
+
+//Disable Right Mouse Click & Cut, Copy, Paste Using jQuery
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+    
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});</script>
+    
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+<style>
+
+.content-table {
+              text-align: center;position: fixed; 
+            color: #333;position: fixed;bottom:1px;
+
+  ;text-align:center;background-color:red; border-collapse: collapse; margin: 1px 0;
+
+  font-size: 0.9em;
+
+  min-width: 100%;
+
+  border-radius: 3px ;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.content-table thead tr {
+
+  
+background-color:gold;
+  color: #ffffff;
+
+  text-align: center;
+
+  font-weight: bold
+
+}
+
+.content-table th,
+
+.content-table td {color:#fff;
+
+  padding:  1px;border:1px solid gold;background:}
+
+.content-table tbody tr {
+
+  border: 1px solid #dddddd;
+
+}
+
+
+.content-table tbody tr:nth-of-type(even) {
+
+  background-color: #f3f3f3;
+
+}
+
+.content-table tbody tr:last-of-type {
+
+  border: px solid #009879;
+
+}
+
+.content-table tbody tr.active-row {
+
+  font-weight: bold;
+
+  color: #009879;
+
+}
+
+</style>
+
+<table class="content-table">
+  <thead> 
+    <tr>
+      <th width="30%"><a href="https://t.me/tvgotk"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgS2KS8R90zouZEqp4NV8v8mXnUaa0CH4ms-RUnJnRLmYj5zdegccxN10-YXkJArUDOzCjksz77YlETLC63edZYUaDyYBaMPWDVDuyDjYV5bhhhYa5FYgu2qHkd0FcCq-Au_2YXSYza4YGnv1WgRR2O_caQI8nR6SRPJFqKVQICOnjzWhsi3VWe5Nzjewg" width="90%" height="40px"></a></th>
+            <td><a href="https://t.me/tvgotk"><button><b>t.me/tvgotk</b> </button></a></td>
+
+      
+      <th width="30%"><a href="https://t.me/tv4wap"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgdW6vop6CO-Sw5e7USP7uj_dCdoQJWSYALuTqDa0Kh5m7H0jl1rSMltPVtDrlKIWPxGe5HLwMd8z_TnDWYFB-ePgb_DbI5LJozDpyvP0L7sK-W422Cm02k3hzZ0XzNhYaJ2A80MT5l7nlebxLL16uFvTKSNRPNr3Ctb51dVMShgVNDsu5XHpCtdVSbW0g" width="90%" height="40px"></a></th>      <td><a href="https://t.me/tv4wap"> <button><b>t.me/tv4wap</b></button> </a></td> </tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
