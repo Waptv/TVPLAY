@@ -1,0 +1,111 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://www.yosintv.link/favicon.ico' rel='icon' type='image/x-icon'/>
+<title> Cricket | Football Live </title>
+<style>
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    font-family: Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+#player {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#text {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+    
+</style>
+    
+</head>
+<body>
+<iframe id="player" loading="lazy" allowfullscreen></iframe>
+  
+<!--
+https://yosintv2.github.io/tv/soon.html
+-->
+    
+<script>
+const channels = {
+
+alieztv: " https://yosintv2.github.io/bkp/plyrr.html?url=//a52.azplay8.me/hls/streama235725/index.m3u8?cst=d89dd3fd1bd0de04871e9b36f53d2ae3 ",    // IPLPPV
+fox: " https://yosintv2.github.io/bkp/plyrr.html?url=https://maxplay-tv.fun/cric.php?id=fox501 ",    // IPLPPV
+    
+tsportsn: " https://cr7tv.github.io/tv/ct.html?id=tsports ",    // IPLPPV
+tsports: "https://cr7tv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H15/chunks.m3u8?p=46&cf=1746800551&d=&ip=106.154.152.233&e=1749801151&h=f667dd6a5da559f3710bd4320e76c4fc ",    // IPLPPV
+khd: " https://cr7tv.github.io/player/player7.html?url=https://a99.azplay8.me/hls/streama235725/index.m3u8?cst=32e0463220d28a2dcadba19ac4340fd2  ",    // IPLPPV
+    
+t20cfd: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://userrr4591.ifrem.net/iframe/frame.php ",    // IPLPPV
+
+    
+skycric: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/BXtuTCs4gU/mono.m3u8",    // IPLPPV
+willow: " https://cr7tv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H15/chunks.m3u8?p=46&cf=1746716743&d=&ip=106.154.152.247&e=1746917343&h=8e876870ae6582fff8a13e64ea8838fc ",    // IPLPPV
+t11: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://wikisport.best/strm/t11.php ",    // IPLPPV
+sk1nz: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://wikisport.best/embed/sk1nz.php	 ",    // IPLPPV
+
+    
+
+sky11: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://play.footfy.xyz/cric/1/player.php?id=skyscric ",    // IPLPPV
+star11: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://play.footfy.xyz/cric/1/player.php?id=starhindi ",    // IPLPPV
+star22: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://play.footfy.xyz/cric/1/player.php?id=star1in ",    // IPLPPV
+fox11: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://play.footfy.xyz/cric/1/player.php?id=fox501 ",    // IPLPPV
+
+    
+//Nepal LIVE
+  
+psl: "https://live.mrgamingstream.net/Player/m3u?url=https://stream2.aryzap.com/v1/018a8885b8951eb401a603639363/018a88860ada09831f17035d95dd/main.m3u8 ",     // NEPAL
+psl1: " https://live.mrgamingstream.net/Player/jwads.html?src=https://live.mrgamingstream.net/Player/m3u?url=https://stream2.aryzap.com/v1/018a8885b8951eb401a603639363/018a88860ada09831f17035d95dd/main.m3u8",     // NEPAL
+
+
+
+    
+};
+
+
+
+    
+const urlParams = new URLSearchParams(window.location.search);
+const channel = urlParams.get('id');
+function setChannel(channel) {
+const iframe = document.getElementById('player');
+iframe.src = channels[channel] || channels.skycric;
+}
+setChannel(channel);
+</script>
+
+
+
+        <!-- BEGIN: Powered by Supercounters.com -->
+        <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+            <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+            <script type="text/javascript">
+                sc_online_i(1707252,"ffffff","ffffff");
+            </script>
+            <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+        </div>
+
+    
+</body>
+</html>
+
+
