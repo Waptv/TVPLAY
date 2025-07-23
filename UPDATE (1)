@@ -1,0 +1,306 @@
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+      .rwd-mediaa{
+  position: ;
+  width: 100%;
+  height: 260px;
+  
+}
+
+.rwd-mediaa iframe,
+.rwd-media video {background:#fff;
+  position: ;
+  width: 100%;
+  height: 260px;  
+}
+
+.rwd-media {background:#000000;
+  position:fixed ;
+  width: 100%;
+  height: 1px;
+  
+}
+
+.rwd-media iframe,
+.rwd-media video {background:#000;
+  position: fixed;
+  width: 100%;
+  height:260px ;  left:-2px
+}
+
+</style>
+
+
+<div class="content">
+  
+  <div class="rwd-media">
+     <iframe id="frame" frameborder="1" src="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen  encrypted-media />      </iframe> </center>
+  </div>
+  
+  
+</div>
+
+<div class="content">
+  
+  <div class="rwd-mediaa">
+    <iframe  src="" width="100%" height="252" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+  
+  
+</div>
+
+
+
+
+
+
+<script src="https://tv4wap.neocities.org/updated.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<style>
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+
+        .live-indicator {
+            animation: blink 1.2s infinite;
+        }
+
+        .match-name {color:white;
+            white-space: normal;
+            overflow: visible;
+            text-overflow: clip;
+            max-width: 100%;
+            text-align: center;
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.2;
+            word-break: break-word;
+        }
+
+        .match-card {
+            background: #1e293b;
+            padding: 12px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .match-card:hover {
+            transform: scale(1.05);
+        }
+
+        .team-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 50%;
+            background-color: white;
+            padding: 4px;
+        }
+
+        .vs-text {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+    </style> 
+
+
+
+
+
+
+
+
+
+        <div class="container mx-auto p-4"> 
+
+        <h2 class="text-3xl font-bold text-red-500 mb-4"></h2> 
+        <div id="liveContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div> 
+        <h2 class="text-3xl font-bold text-yellow-400 mt-6 mb-4"></h2> 
+        <div id="upcomingContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            
+          </div> 
+         </div>
+
+
+
+
+       <script>
+    fetch('https://tv4wap.neocities.org/updates.txt')
+    .then(response => response.json())
+    .then(data => {
+        const liveContainer = document.getElementById("liveContainer");
+        const upcomingContainer = document.getElementById("upcomingContainer");
+        liveContainer.innerHTML = "";
+        upcomingContainer.innerHTML = "";
+
+        const currentTime = new Date();
+
+        // Filtering live and upcoming matches
+        const liveMatches = [];
+        const upcomingMatches = [];
+
+        data.forEach(match => {
+            const matchDate = new Date(match.matchTime);
+            const matchEndTime = new Date(matchDate.getTime() + 10 * 60 * 60 * 1000);
+
+            let matchStatus, statusBadge, isLive = false;
+
+            if (currentTime < matchDate) {
+                matchStatus = `<span class="text-yellow-400 font-semibold text-lg"><span id="timer-${match.id}"></span></span>`;
+                statusBadge = `<span class="bg-yellow-400 text-black px-3 py-1 rounded-md text-sm font-semibold">Upcoming</span>`;
+                upcomingMatches.push({ match, matchStatus, statusBadge });
+            } else if (currentTime >= matchDate && currentTime < matchEndTime) {
+                isLive = true;
+                matchStatus = `<span class="text-red-500 font-bold text-lg">LIVE NOW</span>`;
+                liveMatches.push({ match, matchStatus });
+            }
+        });
+
+        // Render live matches
+        liveMatches.forEach(({ match, matchStatus }) => {
+            const matchElement = createMatchElement(match, matchStatus);
+            liveContainer.appendChild(matchElement);
+        });
+
+        // Render upcoming matches and countdown
+        upcomingMatches.forEach(({ match, matchStatus, statusBadge }) => {
+            const matchElement = createMatchElement(match, matchStatus, statusBadge);
+            upcomingContainer.appendChild(matchElement);
+            startCountdown(new Date(match.matchTime), match.id);
+        });
+    })
+    .catch(error => console.error('Error fetching match data:', error));
+
+    function createMatchElement(match, matchStatus, statusBadge = "") {
+        const matchElement = document.createElement("div");
+        matchElement.classList.add("match-card", "cursor-pointer");
+        matchElement.onclick = () =>document.getElementById('frame').src = `${match.url}`;
+
+        matchElement.innerHTML = `
+           <div class="rsz"><div class="flex flex-col items-center">
+                <div class="grid grid-cols-3 items-center w-full">
+                    <div class="text-center">
+                        <img src="${match.team1.logo}" class="team-logo mx-auto" alt="">
+                        <span class="match-name">${match.team1.name}</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-center mb-1">${statusBadge || ''}</div>
+                        <div class="vs-text">VS</div>
+                        <div class="text-center mt-1">${matchStatus || ''}</div>
+                    </div>
+                    <div class="text-center">
+                        <img src="${match.team2.logo}" class="team-logo mx-auto" alt="">
+                        <span class="match-name">${match.team2.name}</span>
+                    </div>
+                </div>
+            </div></div>
+        `;
+        return matchElement;
+    }
+
+    function startCountdown(matchTime, matchId) {
+        function updateCountdown() {
+            const now = new Date();
+            const timeDiff = matchTime - now;
+
+            if (timeDiff <= 0) {
+                document.getElementById(`timer-${matchId}`).innerText = "Starting soon!";
+                return;
+            }
+
+            const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            if (hours === 0 && minutes === 0 && seconds === 0) {
+                document.getElementById(`timer-${matchId}`).innerText = "Starting soon!";
+            } else {
+                document.getElementById(`timer-${matchId}`).innerText = `${hours}h ${minutes}m ${seconds}s`;
+            }
+
+            setTimeout(updateCountdown, 1000);
+        }
+
+        // Only update countdown if match is upcoming
+        if (matchTime > new Date()) {
+            updateCountdown();
+        } else {
+            document.getElementById(`timer-${matchId}`).innerText = "Match has started!";
+        }
+    }
+</script>
+
+
+
+
+<style>
+.content-table {text-align: center;position: fixed; color: #333;position: fixed;top:252px;margin-bottom:30px;
+ ;text-align:center;background-color:red; border-collapse: collapse; margin: 0px 0; font-size: 0.9em;width: 100%;border-radius: 3px ; overflow: hidden;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);}
+.content-table thead tr {background-color:gold;
+  color: #ffffff; text-align: center;font-weight: bold}
+.content-table th,
+.content-table td {color:#fff; padding:  1px;border:1px solid gold;background:}
+.content-table tbody tr { border: 1px solid #dddddd;}
+.content-table tbody tr:nth-of-type(even) {background-color: #f3f3f3;}
+.content-table tbody tr:last-of-type { border: px solid #009879;}
+.content-table tbody tr.active-row { font-weight: bold;color: #009879;}
+</style>
+
+
+
+<table class="content-table">
+  <thead> <tr> <th width="30%"><a href="https://t.me/tvgotk"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgS2KS8R90zouZEqp4NV8v8mXnUaa0CH4ms-RUnJnRLmYj5zdegccxN10-YXkJArUDOzCjksz77YlETLC63edZYUaDyYBaMPWDVDuyDjYV5bhhhYa5FYgu2qHkd0FcCq-Au_2YXSYza4YGnv1WgRR2O_caQI8nR6SRPJFqKVQICOnjzWhsi3VWe5Nzjewg" width="90%" height="40px"></a></th>
+            <td><a href="https://t.me/tvgotk"><button><b>t.me/tvgotk</b> </button></a></td>
+<th width="30%"><a href="https://t.me/tv4wap"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgdW6vop6CO-Sw5e7USP7uj_dCdoQJWSYALuTqDa0Kh5m7H0jl1rSMltPVtDrlKIWPxGe5HLwMd8z_TnDWYFB-ePgb_DbI5LJozDpyvP0L7sK-W422Cm02k3hzZ0XzNhYaJ2A80MT5l7nlebxLL16uFvTKSNRPNr3Ctb51dVMShgVNDsu5XHpCtdVSbW0g" width="90%" height="40px"></a></th>      <td><a href="https://t.me/tv4wap"> <button><b>t.me/tv4wap</b></button> </a></td> </tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
